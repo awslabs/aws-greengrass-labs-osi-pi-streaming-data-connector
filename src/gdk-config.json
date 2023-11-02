@@ -11,9 +11,9 @@
       },
       "publish": {
         "bucket": "aws-greengrass-components",
-        "region": "ap-southeast-2"
+        "region": "us-east-1"
       }
     }
   },
-  "gdk_version": "1.4.0"
+  "gdk_version": "1.5.0"
 }

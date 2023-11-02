@@ -2,7 +2,7 @@
   "RecipeFormatVersion": "2020-01-25",
   "ComponentName": "com.amazon.osi-pi-streaming-data-connector",
   "ComponentVersion": "0.0.7",
-  "ComponentDescription": "AWS IoT Greengrass managed edge data connector to synchronize OSI Pi Asset Framework and AWS IoT Sitewise asset hierarchy.",
+  "ComponentDescription": "AWS IoT Greengrass managed edge data connector to stream OSI Pi on-change data over WebSockets to AWS IoT Sitewise.",
   "ComponentPublisher": "Amazon",
   "ComponentConfiguration": {
     "DefaultConfiguration": {
