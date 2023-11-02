@@ -1,0 +1,11 @@
+
+# Ignore Greengrass build and Zip directories. 
+# Greengrass GDK / Build tools files
+zip-build
+greengrass-build
+
+# Ignore node modules
+node_modules
+
+# Any copied reference files starting with OG (original) 
+OG*

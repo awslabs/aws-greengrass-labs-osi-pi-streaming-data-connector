@@ -1,0 +1,19 @@
+{
+  "component" : {
+    "com.amazon.osi-pi-streaming-data-connector": {
+      "author": "Dean Colcott",
+      "version": "NEXT_PATCH",
+      "build": {
+        "build_system" :"zip",
+        "options": {
+          "excludes": ["node_modules", "**/node_modules", "dist", "**/dist", "package-lock.json", "**/package-lock.json"]
+       }
+      },
+      "publish": {
+        "bucket": "aws-greengrass-components",
+        "region": "ap-southeast-2"
+      }
+    }
+  },
+  "gdk_version": "1.4.0"
+}

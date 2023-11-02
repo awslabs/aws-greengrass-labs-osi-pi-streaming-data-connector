@@ -1,0 +1,72 @@
+├─ @aws-crypto/util@3.0.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/aws/aws-sdk-js-crypto-helpers
+│  ├─ publisher: AWS Crypto Tools Team
+│  ├─ email: aws-cryptools@amazon.com
+│  ├─ url: https://docs.aws.amazon.com/aws-crypto-tools/index.html?id=docs_gateway#lang/en_us
+│  ├─ path: /src/node_modules/@aws-crypto/util
+│  └─ licenseFile: /src/node_modules/@aws-crypto/util/LICENSE
+├─ @aws-sdk/credential-provider-node@3.347.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/aws/aws-sdk-js-v3
+│  ├─ publisher: AWS SDK for JavaScript Team
+│  ├─ url: https://aws.amazon.com/javascript/
+│  ├─ path: /src/node_modules/@aws-sdk/credential-provider-node
+│  └─ licenseFile: /src/node_modules/@aws-sdk/credential-provider-node/LICENSE
+├─ @eslint-community/regexpp@4.5.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/eslint-community/regexpp
+│  ├─ publisher: Toru Nagashima
+│  ├─ path: /src/node_modules/@eslint-community/regexpp
+│  └─ licenseFile: /src/node_modules/@eslint-community/regexpp/LICENSE
+├─ @eslint/js@8.42.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/eslint/eslint
+│  ├─ path: /src/node_modules/@eslint/js
+│  └─ licenseFile: /src/node_modules/@eslint/js/LICENSE
+├─ @httptoolkit/websocket-stream@6.0.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/httptoolkit/websocket-stream
+│  ├─ path: /src/node_modules/@httptoolkit/websocket-stream
+│  └─ licenseFile: /src/node_modules/@httptoolkit/websocket-stream/LICENSE
+├─ @humanwhocodes/module-importer@1.0.1
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/humanwhocodes/module-importer
+│  ├─ publisher: Nicholas C. Zaks
+│  ├─ path: /src/node_modules/@humanwhocodes/module-importer
+│  └─ licenseFile: /src/node_modules/@humanwhocodes/module-importer/LICENSE
+├─ @nodelib/fs.stat@2.0.5
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat
+│  ├─ path: /src/node_modules/@nodelib/fs.stat
+│  └─ licenseFile: /src/node_modules/@nodelib/fs.stat/LICENSE
+├─ @smithy/types@1.0.0
+│  ├─ licenses: Apache-2.0
+│  ├─ repository: https://github.com/awslabs/smithy-typescript
+│  ├─ publisher: AWS Smithy Team
+│  ├─ url: https://smithy.io
+│  ├─ path: /src/node_modules/@smithy/types
+│  └─ licenseFile: /src/node_modules/@smithy/types/LICENSE
+├─ @types/ms@0.7.31
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: /src/node_modules/@types/ms
+│  └─ licenseFile: /src/node_modules/@types/ms/LICENSE
+├─ axios@1.4.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/axios/axios
+│  ├─ publisher: Matt Zabriskie
+│  ├─ path: /src/node_modules/axios
+│  └─ licenseFile: /src/node_modules/axios/LICENSE
+├─ com.amazon.osi-pi-streaming-data-connector@1.0.0
+│  ├─ licenses: Apache-2.0
+│  ├─ publisher: Dean Colcott
+│  ├─ email: https://www.linkedin.com/in/deancolcott
+│  └─ path: /src
+└─ tslib@1.14.1
+   ├─ licenses: 0BSD
+   ├─ repository: https://github.com/Microsoft/tslib
+   ├─ publisher: Microsoft Corp.
+   ├─ path: /src/node_modules/@aws-crypto/util/node_modules/tslib
+   └─ licenseFile: /src/node_modules/@aws-crypto/util/node_modules/tslib/LICENSE.txt
+

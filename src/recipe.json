@@ -1,0 +1,48 @@
+{
+  "RecipeFormatVersion": "2020-01-25",
+  "ComponentName": "com.amazon.osi-pi-streaming-data-connector",
+  "ComponentVersion": "0.0.7",
+  "ComponentDescription": "AWS IoT Greengrass managed edge data connector to synchronize OSI Pi Asset Framework and AWS IoT Sitewise asset hierarchy.",
+  "ComponentPublisher": "Amazon",
+  "ComponentConfiguration": {
+    "DefaultConfiguration": {
+      "accessControl": {
+        "aws.greengrass.ipc.mqttproxy": {
+          "com.amazon.osi-pi-streaming-data-connector:mqttproxy:1": {
+            "policyDescription": "Allows access to all MQTT Topics - update as / if needed",
+            "operations": [
+              "*"
+            ],
+            "resources": [
+              "*"
+            ]
+          }
+        }
+      }	
+    }
+  },
+  "ComponentDependencies": {
+    "aws.greengrass.TokenExchangeService": {
+      "VersionRequirement": "^2.0.3",
+      "DependencyType": "HARD"
+    }
+  },
+  "Manifests": [
+    {
+      "Platform": {
+        "os": "linux"
+      },
+      "Artifacts": [
+        {
+          "URI": "s3://aws-greengrass-components/src.zip",
+          "Unarchive": "ZIP"
+        }
+      ],
+      "Lifecycle": {
+        "Install": "npm install --omit=dev --prefix {artifacts:decompressedPath}/src/", 
+        "Run": "npm run start --prefix {artifacts:decompressedPath}/src/",
+        "RequiresPrivilege": "false"
+      }
+    }
+  ]
+}
