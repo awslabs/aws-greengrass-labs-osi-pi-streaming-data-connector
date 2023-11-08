@@ -1,6 +1,6 @@
 # AWS OSI Pi SDK 
 
-This library is an SDK wrapper around the [Pi WebAPi]( https://docs.aveva.com/en-US/bundle/pi-web-api-reference/page/help/getting-started.html), a RESTful interface to the OSI Pi system. This SDK provides methods to query the OSI Pi Asset Framework for asset inventory and meta-data and access to the list of assets and data tags stored in the OSI Pi Data Archive.
+This library is an SDK wrapper around the [Pi WebAPI](https://docs.aveva.com/en-US/bundle/pi-web-api-reference/page/help/getting-started.html), a RESTful interface to the OSI Pi system. This SDK provides methods to query the OSI Pi Asset Framework for asset inventory and meta-data and access to the list of assets and data tags stored in the OSI Pi Data Archive.
 
 This library is not a stand-alone solution and is intended to be a common import in a range of connector solutions that interface customers OSI Pi data management systems with a modern data architecture on AWS.
 
@@ -16,25 +16,7 @@ The OSI Pi systems consists of a number of software and data management solution
 The OSI Pi system is deployed on the Window Server operating system and provides a number of interfaces and integrations to access both the Pi Asset Framework and the Pi Data Archive. These include OLDBC / SQL connectors, .NET based SDK (AF-SDK) and a REST'ful web interface via the Pi WebAPI.
 
 ## Installation
-This particular library is not individually deployable. It is intended to be a submodule in other OSI Pi connectors from within hte AWS OSI Pi Integeration Libraries to provide access to the OSI Pi data and asset management systems. 
-
-To import into an existing Git repository / project:
-```
-git add submodule git@ssh.gitlab.aws.dev:aws-osi-pi-integeration-library/osi-pi-sdk.git
-```
-
-## Support
-TBA
-
-## Roadmap
-TBA
-
-## Contributing
-TBA
-
-## Authors and acknowledgment
-TBA
-
+This particular library is not individually deployable. It is intended to be a submodule in other OSI Pi connectors from within the AWS OSI Pi Integration Libraries to provide access to the OSI Pi data and asset management systems. 
 
 ## Contributing
 
@@ -46,3 +28,4 @@ We need your help in making this SDK great. Please participate in the community 
 
 ## License
 See the [LICENSE](LICENSE) file for our project's licensing. We will ask you to confirm the licensing of your contribution.
+

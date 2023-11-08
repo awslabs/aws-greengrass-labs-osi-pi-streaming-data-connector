@@ -2,13 +2,19 @@
  * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0.
  * 
+ * Handles all ingress PubSub message routing and common model for PubSub publish functionality. 
+ * 
+ * Use this class to expose of hide functionality of the AWS OSI Pi Integration library for any given 
+ * Connector by commenting out the unwanted function routes. 
+ *
+ * 
  *  @author Dean Colcott <https://www.linkedin.com/in/deancolcott/>
  */
 
 const topics = require("../../configs/pubsubTopics");
-const { osiPiSdkControllerRouteMap, 
-  osiPiStreamingDataControllerRouteMap, 
-  osiPiPointDataWriterRouteMap 
+const { osiPiSdkControllerRouteMap,
+  osiPiStreamingDataControllerRouteMap,
+  osiPiPointDataWriterRouteMap
 } = require("../../routes/pubsubFunctionRoutes");
 const { pubsubControllerRoutes } = require("../../routes/pubsubControlRoutes");
 
@@ -88,9 +94,10 @@ function pubsubMessageRouter(rawPayload) {
       } else if (osiPiStreamingDataControllerRouteMap.includes(route)) {
         osiPiStreamingDataMessageRouter(route, params);
 
+        // Uncomment below to expose PiPoint create / write functionality
         // Route OSI PI Point Data writer Messages
-      } else if (osiPiPointDataWriterRouteMap.includes(route)) {
-        osiPiPointWriterMessageRouter(route, params);
+        // } else if (osiPiPointDataWriterRouteMap.includes(route)) {
+        //   osiPiPointWriterMessageRouter(route, params);
 
       } else {
         throw new Error(`Received PubSub message on unsupported Route: ${route}`);

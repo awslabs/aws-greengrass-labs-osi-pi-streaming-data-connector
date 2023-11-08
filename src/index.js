@@ -2,11 +2,10 @@
  * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0.
  * 
- * "AWS IoT Greengrass managed edge connector to ingest real time OSI Pi data over Websockets into AWS IoT Sitewise."
+ * AWS IoT Greengrass managed edge connector to ingest real time OSI Pi data over Websockets into AWS IoT Sitewise.
  * 
  *  @author Dean Colcott <https://www.linkedin.com/in/deancolcott/>
  */
-
 
 const { componentRoutes } = require("./routes/pubsubControlRoutes");
 const awsPubSubController = require("./controllers/core/awsPubsubController");
@@ -30,8 +29,8 @@ const initRunAndAwaitComponent = async () => {
     awsPubSubController.publishFormattedMessage(componentRoutes.actionRoute, `${componentHumanName}  successfully initialized!`);
 
     // DEBUG ONLY: Print Greengrass Env Vars to emulate in IDE
-    console.log(`[DEBUG]: Greengrass SVCUID: ${process.env.SVCUID}`);
-    console.log(`[DEBUG]: Greengrass AWS_GG_NUCLEUS_DOMAIN_SOCKET_FILEPATH_FOR_COMPONENT: ${process.env.AWS_GG_NUCLEUS_DOMAIN_SOCKET_FILEPATH_FOR_COMPONENT}`);
+    // console.log(`[DEBUG]: Greengrass SVCUID: ${process.env.SVCUID}`);
+    // console.log(`[DEBUG]: Greengrass AWS_GG_NUCLEUS_DOMAIN_SOCKET_FILEPATH_FOR_COMPONENT: ${process.env.AWS_GG_NUCLEUS_DOMAIN_SOCKET_FILEPATH_FOR_COMPONENT}`);
 
     // Hold process until the Greengrass IPC disconnects
     await awsPubSubController.awaitConnectionClose();

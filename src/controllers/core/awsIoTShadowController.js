@@ -2,6 +2,8 @@
  * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * SPDX-License-Identifier: Apache-2.0.
  * 
+ * Provides interface and remote config management from the AWS IoT Shadow service. 
+ * 
  *  @author Dean Colcott <https://www.linkedin.com/in/deancolcott/>
  */
 
@@ -128,7 +130,7 @@ async function getShadowRejected(payload) {
 
 /**
  * Create a default shadow document with desired state from the default Shadow template.
- * Creating a desired state will triger a shadow updated responds that will be processed as as normal. 
+ * Creating a desired state will trigger a shadow updated responds that will be processed as normal. 
  */
 async function createDefaultShadow() {
 
@@ -336,5 +338,3 @@ const { getPiSecrets } = require("../../osi-pi-sdk/awsSecretsManager");
 const { piWebSdkUpdateConfig } = require("../../osi-pi-sdk/piWebSdk");
 const { sitewisePublisherUpdateConfig } = require("../../osi-pi-sdk/awsSitewisePublisher");
 const { webSocketManagerUpdateConfig } = require("../../osi-pi-sdk/piWebSocketManager");
-
-
